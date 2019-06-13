@@ -1,0 +1,183 @@
+
+Gurobi 8.1.1 (win64, Python) logging started 06/13/19 14:46:28
+
+Academic license - for non-commercial use only
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 534 rows, 509 columns and 2401 nonzeros
+Variable types: 0 continuous, 509 integer (509 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+01]
+
+---------------------------------------------------------------------------
+Multi-objectives: starting optimization with 3 objectives ... 
+---------------------------------------------------------------------------
+
+Multi-objectives: applying initial presolve ...
+---------------------------------------------------------------------------
+
+Presolve removed 283 rows and 2 columns
+Presolve time: 0.01s
+Presolved: 251 rows and 507 columns
+---------------------------------------------------------------------------
+
+Multi-objectives: optimize objective 1 (obj1) ...
+---------------------------------------------------------------------------
+
+Presolve time: 0.01s
+Presolved: 251 rows, 507 columns, 2115 nonzeros
+Variable types: 0 continuous, 507 integer (507 binary)
+
+Root relaxation: objective 1.000000e+00, 262 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.00000    0   44          -    1.00000      -     -    0s
+     0     0    1.00000    0   49          -    1.00000      -     -    0s
+     0     0    1.00000    0   49          -    1.00000      -     -    0s
+     0     0    1.00000    0   75          -    1.00000      -     -    0s
+     0     0    1.00000    0   75          -    1.00000      -     -    0s
+     0     2    1.00000    0   74          -    1.00000      -     -    0s
+*  211    15              20       2.0000000    1.00000  50.0%  41.3    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 1
+  Flow cover: 5
+  Zero half: 3
+
+Explored 246 nodes (11583 simplex iterations) in 0.43 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
+---------------------------------------------------------------------------
+
+Multi-objectives: optimize objective 2 (obj2) ...
+---------------------------------------------------------------------------
+
+
+Loaded MIP start with objective 28
+
+Presolve time: 0.01s
+Presolved: 252 rows, 507 columns, 2120 nonzeros
+Variable types: 0 continuous, 507 integer (507 binary)
+
+Root relaxation: objective 1.000000e+01, 277 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   21   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   16   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   16   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   15   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   19   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   14   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   12   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   17   28.00000   10.00000  64.3%     -    0s
+     0     0   10.00000    0   17   28.00000   10.00000  64.3%     -    0s
+     0     2   10.00000    0   16   28.00000   10.00000  64.3%     -    0s
+
+Cutting planes:
+  Gomory: 18
+  Clique: 3
+  MIR: 1
+  Flow cover: 2
+  Zero half: 7
+
+Explored 2266 nodes (38717 simplex iterations) in 1.90 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 28 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.800000000000e+01, best bound 2.800000000000e+01, gap 0.0000%
+---------------------------------------------------------------------------
+
+Multi-objectives: optimize objective 3 (obj3) ...
+---------------------------------------------------------------------------
+
+
+Loaded MIP start with objective 68867.9
+
+Presolve removed 6 rows and 6 columns
+Presolve time: 0.01s
+Presolved: 247 rows, 501 columns, 2104 nonzeros
+Variable types: 0 continuous, 501 integer (501 binary)
+
+Root relaxation: objective 1.083944e+04, 92 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 10839.4397    0   30 68867.9411 10839.4397  84.3%     -    1s
+     0     0 10839.4397    0   34 68867.9411 10839.4397  84.3%     -    1s
+     0     0 10839.4397    0   28 68867.9411 10839.4397  84.3%     -    1s
+     0     0 10839.4397    0   25 68867.9411 10839.4397  84.3%     -    1s
+     0     0 10839.4397    0   36 68867.9411 10839.4397  84.3%     -    1s
+     0     0 11115.3039    0   43 68867.9411 11115.3039  83.9%     -    1s
+     0     0 12937.2538    0   22 68867.9411 12937.2538  81.2%     -    1s
+     0     0 13334.7772    0   51 68867.9411 13334.7772  80.6%     -    1s
+     0     0 13334.7772    0   59 68867.9411 13334.7772  80.6%     -    2s
+     0     0 15891.3469    0   10 68867.9411 15891.3469  76.9%     -    2s
+     0     0 15891.3469    0   30 68867.9411 15891.3469  76.9%     -    2s
+     0     0 15891.3469    0   20 68867.9411 15891.3469  76.9%     -    2s
+     0     2 15891.3469    0   12 68867.9411 15891.3469  76.9%     -    2s
+*  985   599              43    53227.672893 18689.5193  64.9%  11.9    4s
+  1759   830 41886.2535   50   29 53227.6729 18694.6591  64.9%  11.2    5s
+* 2686  1258              42    53177.381915 18763.0060  64.7%  10.3    5s
+* 6304  3445              42    51267.864195 21374.4709  58.3%   9.3    8s
+* 6743  3627              41    49839.921277 21556.8329  56.7%   9.3    8s
+* 7268  3925              41    49737.400888 21767.3037  56.2%   9.2    8s
+* 8109  4322              36    47864.678468 22001.4123  54.0%   9.2    9s
+  9342  4991 36700.8256   49   12 47864.6785 22378.7382  53.2%   9.2   10s
+ 14718  7682 40783.6063   61   20 47864.6785 23610.1632  50.7%   9.2   15s
+ 18503  9279 38505.1709   41   30 47864.6785 24203.3493  49.4%   9.1   20s
+ 21949 10665 47355.4270   46   10 47864.6785 24905.0651  48.0%   9.1   25s
+ 25006 11727 42906.8735   55    - 47864.6785 25376.4894  47.0%   9.0   30s
+ 25917 12099 28062.7785   38   20 47864.6785 25513.0658  46.7%   9.0   35s
+ 25925 12104 28148.8027   51   95 47864.6785 25513.0658  46.7%   9.0   40s
+ 25930 12108 32841.7129   40   82 47864.6785 25513.0658  46.7%   9.0   45s
+ 25935 12116 25513.0658   24   99 47864.6785 25513.0658  46.7%   9.1   51s
+ 25947 12124 25513.0658   26   99 47864.6785 25513.0658  46.7%   9.1   55s
+ 26415 12240     cutoff   45      47864.6785 25513.0658  46.7%   9.3   60s
+ 27464 12500 26020.4657   28   35 47864.6785 25513.0658  46.7%   9.4   65s
+ 29301 13024 38081.7981   39   13 47864.6785 25539.8298  46.6%   9.7   70s
+ 31289 13397 42284.1631   36    - 47864.6785 26399.6330  44.8%   9.8   75s
+ 33360 13727 34920.3878   49   17 47864.6785 27237.3643  43.1%   9.8   80s
+ 35379 13962 30220.8167   37   17 47864.6785 27969.6805  41.6%   9.8   85s
+ 37423 14195 47509.5556   36   15 47864.6785 28565.9274  40.3%   9.9   90s
+ 39204 14418 infeasible   49      47864.6785 28995.8906  39.4%   9.9   95s
+ 41194 14561 44786.3690   47   11 47864.6785 29553.7564  38.3%   9.9  100s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 1
+  Implied bound: 4
+  Clique: 3
+  MIR: 1
+  Flow cover: 13
+  Zero half: 20
+  Lazy constraints: 1602
+
+Explored 41485 nodes (412193 simplex iterations) in 100.07 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 47864.7 49737.4 49839.9 ... 68867.9
+
+Time limit reached
+Best objective 4.786467846755e+04, best bound 2.965696925174e+04, gap 38.0400%
+
+---------------------------------------------------------------------------
+Multi-objectives: stopped in 100.12 seconds, solution count 7
+Time Limit reached
+
